@@ -73,7 +73,7 @@ This is giving the structure for the classroom boxes.
     background-color: rgb(216, 216, 216);
     background-size: cover;
     background-repeat: no-repeat;
-    
+    background-position: center;
 }
 
 .room1 { background-image: url(images/english.jpg); }
