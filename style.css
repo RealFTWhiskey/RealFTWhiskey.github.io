@@ -59,6 +59,10 @@ This is giving the structure for the classroom boxes.
     grid-template-rows: repeat(8, 1fr);
 }
 
+.room1 {
+    background-image: url("images/english.JPG");
+}
+
 /*-----------------------------------------------------------------------------------------
 The section is regarding the sidenavgrid.
 this is giving the strucutre to the sidebar for navigation with account related things.
