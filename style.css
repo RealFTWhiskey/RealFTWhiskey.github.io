@@ -59,8 +59,9 @@ This is giving the structure for the classroom boxes.
     grid-template-rows: repeat(8, 1fr);
 }
 
-.room1 {
-    background-image: url("images/english.JPG");
+.room1, .room2, .room3, .room4, .room5, .room6 {
+    border: solid rgb(56, 56, 56);
+    background-color: rgb(216, 216, 216);
 }
 
 /*-----------------------------------------------------------------------------------------
