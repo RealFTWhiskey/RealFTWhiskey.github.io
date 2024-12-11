@@ -2,7 +2,7 @@
  /----------------------------\
 | Author: Tadeyz Rydberg      |
 | Alias: TDZ                  |
-| Date Last Changed: 9/12 -24 |
+| Date Last Changed: 11/12 -24 |
 \----------------------------/
 */
 
@@ -11,7 +11,7 @@ The section is regarding the body of the website.
 This is giving the color and size of the whole website more or less.
 */
 body {
-    background-color: white;
+    background-color: rgb(197, 197, 197);
     min-height: 100vh;
 }
 
@@ -44,7 +44,7 @@ footer { grid-area: footer; }
     padding: 10px;
     text-align: center;
     border: solid rgb(56, 56, 56);
-    background-color: rgb(88, 88, 88);
+    background-color: rgb(85, 102, 122);
     box-shadow: rgb(0, 0, 0) 2px 3px 6px 0px;
     gap: 10px;
 }
@@ -56,13 +56,32 @@ This is giving the structure for the classroom boxes.
 #classroomgrid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.roomname {
+    background-color: rgba(189, 189, 189, 0.61);
+    float: left;
+    height: 3vh;
+    padding: 6px;
+    border-radius: 0px 0px 10px 0px;
+    font-size: 30px;
 }
 
 .room1, .room2, .room3, .room4, .room5, .room6 {
     border: solid rgb(56, 56, 56);
     background-color: rgb(216, 216, 216);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
+
+.room1 { background-image: url(images/english.JPG); }
+.room2 { background-image: url(images/math.jpeg); }
+.room3 { background-image: url(images/swedish.png); }
+.room4 { background-image: url(images/geografi.jpg); }
+.room5 { background-image: url(images/biologi.JPG); }
+
 
 /*-----------------------------------------------------------------------------------------
 The section is regarding the sidenavgrid.
@@ -72,7 +91,7 @@ this is giving the strucutre to the sidebar for navigation with account related 
     display: flex;
     flex-direction: column;
     padding: 13px;
-
+    min-width: 250px;
 }
 
 .pfp {
@@ -96,7 +115,7 @@ this is giving the strucutre to the sidebar for navigation with account related 
 .login {
     height: 40px;
     width: 6vh;
-
+    border-radius: 15px;
 }
 
 .infogrid {
@@ -122,16 +141,16 @@ This is giving the buttons its looks and function.*/
 button {
     cursor: pointer;
     border: solid rgb(56, 56, 56);
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(184, 219, 233);
 }
 
 button:hover {
-    background-color: rgb(184, 184, 184);
+    background-color: rgb(143, 184, 230);
     transition: 0.5s;
 }
 
 .logo {
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(184, 219, 233);
 }
 
 
