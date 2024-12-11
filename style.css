@@ -72,7 +72,7 @@ this is giving the strucutre to the sidebar for navigation with account related 
 
 .pfp {
     margin-right: 1vh;
-    background-image: url("Images/pfp.jpg");
+    background-image: url("images/pfp.jpg");
     background-size: cover;
     background-position: center;
     float: left;
