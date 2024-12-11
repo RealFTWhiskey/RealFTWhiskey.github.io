@@ -76,11 +76,11 @@ This is giving the structure for the classroom boxes.
     
 }
 
-.room1 { background-image: url(images/english.JPG); }
+.room1 { background-image: url(images/english.jpg); }
 .room2 { background-image: url(images/math.jpeg); }
 .room3 { background-image: url(images/swedish.png); }
 .room4 { background-image: url(images/geografi.jpg); }
-.room5 { background-image: url(images/biologi.JPG); }
+.room5 { background-image: url(images/biologi.jpg); }
 
 
 /*-----------------------------------------------------------------------------------------
@@ -96,7 +96,7 @@ this is giving the strucutre to the sidebar for navigation with account related 
 
 .pfp {
     margin-right: 1vh;
-    background-image: url("images/pfp.JPG");
+    background-image: url("images/pfp.jpg");
     background-size: cover;
     background-position: center;
     float: left;
