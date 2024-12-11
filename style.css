@@ -1,0 +1,141 @@
+ /*
+ /----------------------------\
+| Author: Tadeyz Rydberg      |
+| Alias: TDZ                  |
+| Date Last Changed: 9/12 -24 |
+\----------------------------/
+*/
+
+/*-----------------------------------------------------------------------------------------
+The section is regarding the body of the website.
+This is giving the color and size of the whole website more or less.
+*/
+body {
+    background-color: white;
+    min-height: 100vh;
+}
+
+/*-----------------------------------------------------------------------------------------
+The scetion is regarding the maingrid.
+This is giving the overall structure of the website.
+*/
+#maingrid {
+    padding: 20px;
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 80px repeat(4, auto) 50px;
+    gap: 10px;
+    grid-template-areas: 
+    "topbar topbar"
+    "sidebar content"
+    "sidebar content"
+    "sidebar content"
+    "sidebar content"
+    "footer footer";
+}
+
+header { grid-area: topbar; }
+article { grid-area: content; }
+nav { grid-area: sidebar; }
+footer { grid-area: footer; }
+
+#classroomgrid, #sidenavgrid, #headergrid, .footer, .logo, button {
+    padding: 10px;
+    text-align: center;
+    border: solid rgb(56, 56, 56);
+    background-color: rgb(88, 88, 88);
+    box-shadow: rgb(0, 0, 0) 2px 3px 6px 0px;
+    gap: 10px;
+}
+
+/*-----------------------------------------------------------------------------------------
+The section is regarding the classroomgrid.
+This is giving the structure for the classroom boxes.
+*/
+#classroomgrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+/*-----------------------------------------------------------------------------------------
+The section is regarding the sidenavgrid.
+this is giving the strucutre to the sidebar for navigation with account related things.
+*/
+#sidenavgrid {
+    display: flex;
+    flex-direction: column;
+    padding: 13px;
+
+}
+
+.pfp {
+    margin-right: 1vh;
+    background-image: url("Images/pfp.jpg");
+    background-size: cover;
+    background-position: center;
+    float: left;
+    height: 100px;
+    width: 100px;
+    border-radius: 40px;
+}
+
+.profile {
+    padding: 10px;
+    background-color: rgba(32, 32, 32, 0.5);
+    box-shadow: rgb(0, 0, 0) 2px 3px 6px 0px;
+    max-height: 100px;
+}
+
+.login {
+    height: 40px;
+    width: 6vh;
+
+}
+
+.infogrid {
+    margin: 0.5vh;
+    text-align: left;
+    font-size: 1.8vh;
+}
+
+/*
+-----------------------------------------------------------------------------------------
+The section is regarding...
+This is...
+*/
+
+#headergrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr)
+}
+
+/*----------------------------------------------------------------------------------------*/
+/*The section is regarding the buttons on the website.
+This is giving the buttons its looks and function.*/
+button {
+    cursor: pointer;
+    border: solid rgb(56, 56, 56);
+    background-color: rgb(216, 216, 216);
+}
+
+button:hover {
+    background-color: rgb(184, 184, 184);
+    transition: 0.5s;
+}
+
+.logo {
+    background-color: rgb(216, 216, 216);
+}
+
+
+
+
+
+/*
+-----------------------------------------------------------------------------------------
+The section is regarding...
+This is...
+*/
+
