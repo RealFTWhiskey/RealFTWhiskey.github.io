@@ -20,13 +20,11 @@ The scetion is regarding the maingrid.
 This is giving the overall structure of the website.
 */
 #maingrid {
-    padding: 20px;
     display: grid;
     min-height: 100vh;
     grid-template-columns: 1fr 4fr;
     grid-template-rows:80px repeat(4, auto) 50px;
     grid-template-areas: 
-    "topbar topbar"
     "sidebar content"
     "sidebar content"
     "sidebar content"
@@ -34,7 +32,6 @@ This is giving the overall structure of the website.
     "footer footer";
 }
 
-header { grid-area: topbar; }
 article { grid-area: content; }
 nav { grid-area: sidebar; }
 footer { grid-area: footer; }
@@ -124,17 +121,6 @@ this is giving the strucutre to the sidebar for navigation with account related 
     text-align: left;
     font-size: 1.8vh;
     text-decoration-color: aliceblue;
-}
-
-/*
------------------------------------------------------------------------------------------
-The section is regarding...
-This is...
-*/
-
-#headergrid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr)
 }
 
 /*----------------------------------------------------------------------------------------*/
