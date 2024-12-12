@@ -11,7 +11,7 @@ The section is regarding the body of the website.
 This is giving the color and size of the whole website more or less.
 */
 body {
-    background-color: rgb(197, 197, 197);
+    background-color: #EAF3FA;
     min-height: 100vh;
 }
 
@@ -24,8 +24,7 @@ This is giving the overall structure of the website.
     display: grid;
     min-height: 100vh;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 80px repeat(4, auto) 50px;
-    gap: 10px;
+    grid-template-rows:80px repeat(4, auto) 50px;
     grid-template-areas: 
     "topbar topbar"
     "sidebar content"
@@ -44,9 +43,10 @@ footer { grid-area: footer; }
     padding: 10px;
     text-align: center;
     border: solid rgb(56, 56, 56);
-    background-color: rgb(85, 102, 122);
+    background-color: rgb(163, 163, 163);
     box-shadow: rgb(0, 0, 0) 2px 3px 6px 0px;
     gap: 10px;
+    border-width: 1px;
 }
 
 /*-----------------------------------------------------------------------------------------
@@ -60,27 +60,28 @@ This is giving the structure for the classroom boxes.
 }
 
 .roomname {
-    background-color: rgba(189, 189, 189, 0.61);
-    float: left;
-    height: 3vh;
-    padding: 6px;
-    border-radius: 0px 0px 10px 0px;
-    font-size: 30px;
+    background-color: rgba(128, 128, 128, 0.692);
+    height: 2vh;
+    width: 50%;
+    padding: 4px;
+    border-radius: 15px 0px 10px 0px;
+    font-size: 20px;
 }
 
 .room1, .room2, .room3, .room4, .room5, .room6 {
     border: solid rgb(56, 56, 56);
+    border-radius: 20px;
     background-color: rgb(216, 216, 216);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.room1 { background-image: url(images/english.jpg); }
-.room2 { background-image: url(images/math.jpeg); }
-.room3 { background-image: url(images/swedish.png); }
-.room4 { background-image: url(images/geografi.jpg); }
-.room5 { background-image: url(images/biologi.jpg); }
+.room1 { background-image: url(images/Placeholder.webp); }
+.room2 { background-image: url(images/Placeholder.webp); }
+.room3 { background-image: url(images/Placeholder.webp); }
+.room4 { background-image: url(images/Placeholder.webp); }
+.room5 { background-image: url(images/Placeholder.webp); }
 
 
 /*-----------------------------------------------------------------------------------------
@@ -142,16 +143,16 @@ This is giving the buttons its looks and function.*/
 button {
     cursor: pointer;
     border: solid rgb(56, 56, 56);
-    background-color: rgb(184, 219, 233);
+    background-color: rgb(143, 143, 143);
 }
 
 button:hover {
-    background-color: rgb(143, 184, 230);
+    background-color: rgb(116, 116, 116);
     transition: 0.5s;
 }
 
 .logo {
-    background-color: rgb(184, 219, 233);
+    background-color: rgb(143, 143, 143);
 }
 
 
