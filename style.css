@@ -100,15 +100,17 @@ main {
   }
 }
 
-.classroom-grid {
+.grid {
   position: relative;
+  border: solid black;
+  border-width: 1px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
   min-height: 600px;
 }
 
-.classroom-grid>div {
+.grid>div {
   border-radius: 0.5rem;
   cursor: pointer;
   border: solid black;
