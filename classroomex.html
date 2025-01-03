@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Thonburi" />
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="calstyle.css" />
+    <link rel="stylesheet" type="text/css" href="classroomstyle.css" />
 </head>
 </head>
 
@@ -18,7 +18,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="index.html" class="active">
+                    <a href="index.html">
                         <i class="bx bx-home"></i>
                         <span>Hem</span>
                     </a>
@@ -30,7 +30,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="classroom.html">
+                    <a href="classroom.html"  class="active">
                         <i class="bx bxs-school"></i>
                         <span>Klassrum</span>
                     </a>
@@ -38,7 +38,7 @@
                 <li>
                     <a href="grades.html">
                         <i class="bx bx-book"></i>
-                        <span>betyg</span>
+                        <span>Inlämningar och betyg</span>
                     </a>
                 </li>
                 <li>
@@ -64,29 +64,45 @@
     </aside>
 
     <main>
-        <div class="grid">
-            <h1>Exempel för klassrum</h1>
-                <div class="calender">
-                    <div class="header">
-                        <button id="prevBtn">
-                            <i class="bx bxs-chevron-left"></i>
-                        </button>
-                        <div class="monthYear" id="monthYear"></div>
-                        <button id="nextBtn">
-                            <i class="bx bxs-chevron-right"></i>
-                        </button>
-                    </div>
-                    <div class="days">
-                        <div class="day">Mån</div>
-                        <div class="day">Tis</div>
-                        <div class="day">Ons</div>
-                        <div class="day">Tor</div>
-                        <div class="day">Fre</div>
-                        <div class="day">Lör</div>
-                        <div class="day">Sön</div>
-                    </div>
-                    <div class="dates" id="dates"></div>
+        <h1>Klassrums prototyp</h1>
+        <br>
+        <div class="classgrid">
+            <div class="classmodule-1 hover" id="exampel">
+                <div class="textarea">
+                    klassmodul exampel
                 </div>
+            </div>
+            <div class="classmodule-2 hover">
+                <div class="textarea">
+                    klassmodul exampel
+                </div>
+            </div>
+            <div class="classmodule-3 hover">
+                <div class="textarea">
+                    klassmodul exampel
+                </div>
+            </div>
+            <div class="classmodule-4 hover">
+                <div class="textarea">
+                    klassmodul exampel
+                </div>
+            </div>
+            <div class="calender">
+                <div class="textarea header">
+                    <button id="prebBtn">
+                        <i class="bx bxs-chevron-left"></i>
+                    </button>
+                    <div>Januari 2025</div>
+                    <button id="nextBtn">
+                        <i class="bx bxs-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="wip">
+                <div class="textarea">
+                    Placeholder Name
+                </div>
+            </div>
         </div>
     </main>
 
