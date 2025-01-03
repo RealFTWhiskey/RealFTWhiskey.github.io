@@ -1,8 +1,3 @@
-/*
- * Watch this tutorial on YouTube
- * https://youtu.be/fIR3isyFV8s
- */
-
 const resizeBtn = document.querySelector("[data-resize-btn]");
 
 resizeBtn.addEventListener("click", function (e) {
@@ -14,56 +9,60 @@ document.getElementById('exampel').addEventListener('click', function () {
   window.location.href = 'classroomex.html';
 });
 
-const monthYearElement = document.getElementById('monthYear');
-const datesElement = document.getElementById('dates');
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
+const calendarDates = document.querySelector('.calendar-dates');
+const monthYear = document.getElementById('month-year');
+const prevMonthBtn = document.getElementById('prev-month');
+const nextMonthBtn = document.getElementById('next-month');
 
 let currentDate = new Date();
+let currentMonth = currentDate.getMonth();
+let currentYear = currentDate.getFullYear();
 
-const updateCalender = () => {
-  const currentYear = currentDate.getFullYear();
-  const currentMonth = currentDate.getMonth();
+const months = [
+  'January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December'
+];
 
-  const firstday = new Date(currentYear, currentMonth, 0);
-  const lastDay = new Date(currentYear, currentMonth + 1, 0);
-  const totalDays = lastDay.getDate();
-  const firstDayIndex = firstday.getDate();
-  const lastDayIndex = lastDay.getDay();
+function renderCalendar(month, year) {
+  calendarDates.innerHTML = '';
+  monthYear.textContent = `${months[month]} ${year}`;
 
-  const monthYearString = currentDate.toLocaleString
-    ('default', { month: 'long', year: 'numeric' });
-  monthYearElement.textContent = monthYearString;
+  // Get the first day of the month
+  const firstDay = new Date(year, month, 1).getDay();
 
-  let datesHTML = '';
+  // Get the number of days in the month
+  const daysInMonth = new Date(year, month + 1, 0).getDate();
 
-  for (let i = firstDayIndex; i > 0; i--) {
-    const prevDate = new Date(currentYear, currentMonth, 0 - i + 1);
-    datesHTML += `<div class="date inactive">${prevDate.getDate()}</div>`;
+  // Create blanks for days of the week before the first day
+  for (let i = 0; i < firstDay; i++) {
+    const blank = document.createElement('div');
+    calendarDates.appendChild(blank);
   }
 
-  for (let i = 1; i <= totalDays; i++) {
-    const date = new Date(currentYear, currentMonth, i);
-    const activeClass = new date.toDateString() == new Date().toDateString() ? 'active' : '';
-    datesHTML += `<div class="date ${activeClass}">${i}</div>`;
+  // Populate the days
+  for (let i = 1; i <= daysInMonth; i++) {
+    const day = document.createElement('div');
+    day.textContent = i;
+    calendarDates.appendChild(day);
   }
-
-  for (let i = 1; i <= 7 - lastDayIndex; i++) {
-    const nextDate = new Date(currentYear, currentMonth, + 1, i);
-    datesHTML += `<div class="date inactive">${nextDate.getDate()}</div>`;
-  }
-
-  datesElement.innerHTML = datesHTML;
 }
 
-prevBtn.addEventListener('click', () => {
-  currentDate.setMonth(currentDate.getMonth() - 1);
-  updateCalender();
-})
+renderCalendar(currentMonth, currentYear);
 
-nextBtn.addEventListener('click', () => {
-  currentDate.setMonth(currentDate.getMonth() + 1);
-  updateCalender();
-})
+prevMonthBtn.addEventListener('click', () => {
+  currentMonth--;
+  if (currentMonth < 0) {
+    currentMonth = 11;
+    currentYear--;
+  }
+  renderCalendar(currentMonth, currentYear);
+});
 
-updateCalender();
+nextMonthBtn.addEventListener('click', () => {
+  currentMonth++;
+  if (currentMonth > 11) {
+    currentMonth = 0;
+    currentYear++;
+  }
+  renderCalendar(currentMonth, currentYear);
+});
