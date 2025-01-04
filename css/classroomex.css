@@ -70,12 +70,12 @@ body {
 
 .notearea {
     grid-row: 28 / 70;
-    grid-column: 75 / 81;
+    grid-column: 75 / 100;
 }
 
 .calendar {
     grid-row: 1 / 28;
-    grid-column: 75 / 81;
+    grid-column: 75 / 100;
 }
 
 .pinboard {

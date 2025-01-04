@@ -198,10 +198,6 @@ main {
   padding: 10px;
 }
 
-.calendar-weekdays {
-  display: flex;
-}
-
 .calendar-weekdays div {
   font-weight: bold;
 }

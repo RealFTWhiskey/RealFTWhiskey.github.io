@@ -1,3 +1,9 @@
+.sidehead {
+    border-bottom: solid;
+    border-width: 1px;
+    font-size: 30px;
+}
+
 .gradespage {
     background-image: linear-gradient(#172f74, #678dce);
     width: 100%;
@@ -10,7 +16,7 @@
 .gradesstyle {
     position: relative;
     background-color: white;
-    height: 101.3%;
+    height: 102%;
     border-radius: 0.35rem;
     margin: -0.5%;
 }
@@ -28,13 +34,18 @@
 .button {
     display: block;
     width: 100%;
-    height: 5%;
-    font-size: 25px;
+    height: 3%;
+    font-size: 20px;
     border-bottom: solid;
     border-top: none;
     border-left: none;
     border-right: none;
     border-width: 1px;
+    background-color: white;
+}
+
+.button:hover {
+    text-decoration: underline;
 }
 
 .top {

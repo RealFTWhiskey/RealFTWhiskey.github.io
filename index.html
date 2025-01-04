@@ -1,150 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Echo</title>
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Thonburi" />
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/classroomex.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
 </head>
-</head>
-
 <body>
-    <aside>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html" class="active">
-                        <i class="bx bx-home"></i>
-                        <span>Hem</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="profile.html">
-                        <i class="bx bx-user"></i>
-                        <span>Profil</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="classroom.html">
-                        <i class="bx bxs-school"></i>
-                        <span>Klassrum</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="grades.html">
-                        <i class="bx bx-book"></i>
-                        <span>Betyg</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="ai.html">
-                        <i class="bx bx-conversation"></i>
-                        <span>Ai tool</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="bx bx-log-out"></i>
-                        <span>logout</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" data-resize-btn>
-                        <i class="bx bx-chevrons-right"></i>
-                        <span>Collapse</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </aside>
-
-    <main>
-        <div>
-            <h2>Hem</h2>
-            <p>
-                Denna sida är en prototyp över "hem" sidan där allmän information visas så som elevens nästa
-                <br>
-                inlämning eller upkommande prov.
-            </p>
-            <div class="grid">
-                <div class="pinboard">
-                    <div class="textarea">
-                        Anslagstavla
-                    </div>
-                </div>
-                <div class="calendar">
-                    <div class="calendar-header">
-                        <button id="prev-month">‹</button>
-                        <div id="month-year"></div>
-                        <button id="next-month">›</button>
-                    </div>
-                    <div class="calendar-body">
-                        <div class="calendar-weekdays">
-                            <div class="calendar-weekdays">
-                                <div>Mon</div>
-                                <div>Tue</div>
-                                <div>Wed</div>
-                                <div>Thu</div>
-                                <div>Fri</div>
-                                <div>Sat</div>
-                                <div>Sun</div>
-                            </div>
-                        </div>
-                        <div class="calendar-dates">
-                            <div>1</div>
-                            <div>2</div>
-                            <div>3</div>
-                            <div>4</div>
-                            <div>5</div>
-                            <div>6</div>
-                            <div>7</div>
-                            <div>8</div>
-                            <div>9</div>
-                            <div>10</div>
-                            <div>11</div>
-                            <div>12</div>
-                            <div>13</div>
-                            <div>14</div>
-                            <div>15</div>
-                            <div>16</div>
-                            <div>17</div>
-                            <div>18</div>
-                            <div>19</div>
-                            <div>20</div>
-                            <div>21</div>
-                            <div>22</div>
-                            <div>23</div>
-                            <div>24</div>
-                            <div>25</div>
-                            <div>26</div>
-                            <div>27</div>
-                            <div>28</div>
-                            <div>29</div>
-                            <div>30</div>
-                            <div>31</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="indexmodul-1">
-                    <div class="textarea">Nästa inlämning</div>
-                </div>
-                <div class="indexmodul-2">
-                    <div class="textarea">Nästa prov</div>
-                </div>
-                <div class="indexmodul-3">
-                    <div class="textarea">Information från utbildning</div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <script src="script.js"></script>
+    <div class="wrapper">
+        <form action="#">
+          <h2>Login</h2>
+            <div class="input-field">
+            <input type="text" required>
+            <label>Enter your email</label>
+          </div>
+          <div class="input-field">
+            <input type="password" required>
+            <label>Enter your password</label>
+          </div>
+          <div class="forget">
+            <label for="remember">
+              <input type="checkbox" id="remember">
+              <p>Remember me</p>
+            </label>
+            <a href="#">Forgot password?</a>
+          </div>
+          <button type="submit" onclick="location.href='home.html'">Log In</button>
+          <div class="register">
+            <p>Don't have an account? <a href="#">Register</a></p>
+          </div>
+        </form>
+      </div>
 </body>
-
 </html>
