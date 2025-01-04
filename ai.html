@@ -8,7 +8,8 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Thonburi" />
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/ai.css" />
 </head>
 </head>
 
@@ -37,13 +38,13 @@
                 <li>
                     <a href="grades.html">
                         <i class="bx bx-book"></i>
-                        <span>Inlämningar och Betyg</span>
+                        <span>Betyg</span>
                     </a>
                 </li>
                 <li>
-                    <a href="forums.html" class="active">
+                    <a href="ai.html" class="active">
                         <i class="bx bx-conversation"></i>
-                        <span>forum</span>
+                        <span>Ai tool</span>
                     </a>
                 </li>
                 <li>
@@ -64,20 +65,24 @@
 
     <main>
         <div>
-            <h1>ECHO</h1>
-            <p>Denna sidan innefattar Forum för Echo läroverktyg.</p>
+            <h2>AI tool</h2>
             <p>
-                Denna sida kommer innefatta ett forum:
-                <br>
-                - En plats för elever att diskutera.
-                <br>
-                - Kunna skappa inlägg för hjälp eller tipsa andra.
-                <br>
-                - Möjlighet för lärare att övervacka forumet.
+                Denna sida är en prototyp och kommer innefatta det AI verktyg som kommer finns tillgängligt för
+                användare
             </p>
+            <div class="aipage">
+                <div class="aihistory">
+                    <h2>Historik</h2>
+                </div>
+                <div class="chatbox aistyle"></div>
+                <div class="textbox aistyle">
+                    <textarea type="textarea" name="freeform" id="textbox"></textarea>
+                </div>
+
+            </div>
         </div>
     </main>
-    
+
 
     <script src="script.js"></script>
 </body>

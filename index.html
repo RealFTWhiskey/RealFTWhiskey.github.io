@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Thonburi" />
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/classroomex.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
 </head>
 </head>
 
@@ -37,13 +39,13 @@
                 <li>
                     <a href="grades.html">
                         <i class="bx bx-book"></i>
-                        <span>Inlämningar och Betyg</span>
+                        <span>Betyg</span>
                     </a>
                 </li>
                 <li>
-                    <a href="forums.html">
+                    <a href="ai.html">
                         <i class="bx bx-conversation"></i>
-                        <span>forum</span>
+                        <span>Ai tool</span>
                     </a>
                 </li>
                 <li>
@@ -64,19 +66,81 @@
 
     <main>
         <div>
-            <h1>ECHO</h1>
-            <p>Denna sidan är homepage för Echo läroverktyg.</p>
+            <h2>Hem</h2>
             <p>
-                Denna sida kommer innefatta mer allmänna saker så som:
+                Denna sida är en prototyp över "hem" sidan där allmän information visas så som elevens nästa
                 <br>
-                - Kalender?
-                <br>
-                - Nästa klass?
-                <br>
-                - Uppkomande inlämningar?
-                <br>
-                - Extra läxhjälp?
+                inlämning eller upkommande prov.
             </p>
+            <div class="grid">
+                <div class="pinboard">
+                    <div class="textarea">
+                        Anslagstavla
+                    </div>
+                </div>
+                <div class="calendar">
+                    <div class="calendar-header">
+                        <button id="prev-month">‹</button>
+                        <div id="month-year"></div>
+                        <button id="next-month">›</button>
+                    </div>
+                    <div class="calendar-body">
+                        <div class="calendar-weekdays">
+                            <div class="calendar-weekdays">
+                                <div>Mon</div>
+                                <div>Tue</div>
+                                <div>Wed</div>
+                                <div>Thu</div>
+                                <div>Fri</div>
+                                <div>Sat</div>
+                                <div>Sun</div>
+                            </div>
+                        </div>
+                        <div class="calendar-dates">
+                            <div>1</div>
+                            <div>2</div>
+                            <div>3</div>
+                            <div>4</div>
+                            <div>5</div>
+                            <div>6</div>
+                            <div>7</div>
+                            <div>8</div>
+                            <div>9</div>
+                            <div>10</div>
+                            <div>11</div>
+                            <div>12</div>
+                            <div>13</div>
+                            <div>14</div>
+                            <div>15</div>
+                            <div>16</div>
+                            <div>17</div>
+                            <div>18</div>
+                            <div>19</div>
+                            <div>20</div>
+                            <div>21</div>
+                            <div>22</div>
+                            <div>23</div>
+                            <div>24</div>
+                            <div>25</div>
+                            <div>26</div>
+                            <div>27</div>
+                            <div>28</div>
+                            <div>29</div>
+                            <div>30</div>
+                            <div>31</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="indexmodul-1">
+                    <div class="textarea">Nästa inlämning</div>
+                </div>
+                <div class="indexmodul-2">
+                    <div class="textarea">Nästa prov</div>
+                </div>
+                <div class="indexmodul-3">
+                    <div class="textarea">Information från utbildning</div>
+                </div>
+            </div>
         </div>
     </main>
 

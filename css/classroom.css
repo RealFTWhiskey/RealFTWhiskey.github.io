@@ -1,0 +1,37 @@
+
+.room-img {
+    border-radius: 0.35rem;
+    background-size: cover;
+    background-position: center;
+    margin: -4%;
+    height: 67%;
+    border-width: 10px;
+    z-index: 999;
+  }
+  
+  .room-1 {
+    grid-row: 1 / 28;
+    grid-column: 1 / 21;
+  }.room-1-img {background-image: url(images/books.jpeg);}
+  
+  .room-2 {
+    grid-row: 1 / 28;
+    grid-column: 21 / 41;
+  }.room-2-img {background-image: url(images/Historia.jpg);}
+  
+  .room-3 {
+    grid-row: 1 / 28;
+    grid-column: 41 / 61;
+  }.room-3-img {background-image: url(images/matte.jpg);}
+  
+  .room-4 {
+    grid-row: 1 / 28;
+    grid-column: 61 / 81;
+  }.room-4-img {background-image: url(images/geografi.webp);}
+  
+  .room-5 {
+    grid-row: 28 / 55;
+    grid-column: 1 / 21;
+  }.room-5-img {background-image: url(images/idrott.jpg);}
+  
+  

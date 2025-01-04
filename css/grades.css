@@ -1,0 +1,43 @@
+.gradespage {
+    background-image: linear-gradient(#172f74, #678dce);
+    width: 100%;
+    height: 90vh;
+    border-radius: 0.35rem;
+    padding: 1%;
+    text-align: center;
+}
+
+.gradesstyle {
+    position: relative;
+    background-color: white;
+    height: 101.3%;
+    border-radius: 0.35rem;
+    margin: -0.5%;
+}
+
+.grades {
+    float: left;
+    width: 85.5%;
+}
+
+.gradessidenav {
+    float: right;
+    width: 15%;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    height: 5%;
+    font-size: 25px;
+    border-bottom: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 1px;
+}
+
+.top {
+    border-radius: 0.35rem 0.35rem 0rem 0rem;
+}
+
