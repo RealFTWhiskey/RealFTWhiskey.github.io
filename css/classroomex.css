@@ -21,6 +21,10 @@ body {
     height: 96.5%;
 }
 
+.textarea li {
+    list-style-type: none;
+}
+
 .textareaextra {
     height: 97.5%;
 }
