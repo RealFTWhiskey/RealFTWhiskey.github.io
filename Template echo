@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo</title>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Thonburi" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+</head>
+
+<body>
+    <aside>
+        <nav>
+            <ul>
+                <li>
+                    <a href="home.html" class="active">
+                        <i class="bx bx-home"></i>
+                        <span>Hem</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <i class="bx bx-user"></i>
+                        <span>Profil</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="classroom.html">
+                        <i class="bx bxs-school"></i>
+                        <span>Klassrum</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="grades.html">
+                        <i class="bx bx-book"></i>
+                        <span>Betyg</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ai.html">
+                        <i class="bx bx-conversation"></i>
+                        <span>Ai tool</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="bx bx-log-out"></i>
+                        <span>logout</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-resize-btn>
+                        <i class="bx bx-chevrons-right"></i>
+                        <span>Collapse</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <div>
+            <h1>ECHO</h1>
+            <p>... för Echo läroverktyg.</p>
+            <p>
+                <br>
+                -
+                <br>
+                -
+                <br>
+                -
+                <br>
+                -
+            </p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
