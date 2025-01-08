@@ -5,75 +5,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Echo</title>
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald"/>
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Thonburi"/>
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Thonburi" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/livelecture.css" />
 </head>
 
 <body>
-<aside>
-    <nav>
-        <ul>
-            <li>
-                <a href="home.html" class="active">
-                    <i class="bx bx-home"></i>
-                    <span>Hem</span>
-                </a>
-            </li>
-            <li>
-                <a href="profile.html">
-                    <i class="bx bx-user"></i>
-                    <span>Profil</span>
-                </a>
-            </li>
-            <li>
-                <a href="classroom.html">
-                    <i class="bx bxs-school"></i>
-                    <span>Klassrum</span>
-                </a>
-            </li>
-            <li>
-                <a href="grades.html">
-                    <i class="bx bx-book"></i>
-                    <span>Betyg</span>
-                </a>
-            </li>
-            <li>
-                <a href="ai.html">
-                    <i class="bx bx-conversation"></i>
-                    <span>Ai tool</span>
-                </a>
-            </li>
-            <li>
-                <a href="index.html">
-                    <i class="bx bx-log-out"></i>
-                    <span>logout</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" data-resize-btn>
-                    <i class="bx bx-chevrons-right"></i>
-                    <span>Collapse</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</aside>
-<main>
-    <div>
-        <h1>ECHO</h1>
-        <p>Spela in din lektion här. Den kommer visas för eleverna som ingår i klassen.</p>
-
+    <aside>
+        <nav>
+            <ul>
+                <li>
+                    <a href="home.html" class="active">
+                        <i class="bx bx-home"></i>
+                        <span>Hem</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <i class="bx bx-user"></i>
+                        <span>Profil</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="classroom.html">
+                        <i class="bx bxs-school"></i>
+                        <span>Klassrum</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="grades.html">
+                        <i class="bx bx-book"></i>
+                        <span>Betyg</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ai.html">
+                        <i class="bx bx-conversation"></i>
+                        <span>Ai tool</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="bx bx-log-out"></i>
+                        <span>logout</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-resize-btn>
+                        <i class="bx bx-chevrons-right"></i>
+                        <span>Collapse</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
         <div>
-            <video id="video" autoplay></video>
-            <button id="startButton">Starta lektion</button>
-            <button id="stopButton" disabled>Avsluta lektion</button>
+            <h1>ECHO</h1>
+            <p>Prototyp över streaming miljö för Echo.</p>
+            
+            <div class="livefeedmodul">
+                <div class="participants">
+                    <div class="student hover">Kalle</div>
+                    <div class="student hover">Anna</div>
+                    <div class="student hover">Leonardo</div>
+                    <div class="student hover">Alfred</div>
+                    <div class="student hover">Raphael</div>
+                    <div class="student hover">Kevin</div>
+                    <div class="student hover">Lisa</div>
+                    <div class="student hover">Donatello</div>
+                    <div class="student hover">Jimmy</div>
+                    <div class="student hover">karl</div>
+                    <div class="student hover">Gustav</div>
+                    <div class="student hover">Michilangelo</div>
+                    <div class="student hover">Alfons</div>
+                    <div class="student hover">Amalia</div>
+                    <div class="student hover">Jenny</div>
+                    <div class="student hover">Malin</div>
+                </div>
+                <div class="livefeed">
+                    <video id="video" autoplay></video>
+                    <button id="startButton">Starta lektion</button>
+                    <button id="stopButton" disabled>Avsluta lektion</button>
+                </div>
+                
+            </div>
         </div>
-    </div>
-</main>
+    </main>
 
-<script src="videostream.js"></script>
+    <script src="videostream.js"></script>
 </body>
 
 </html>
