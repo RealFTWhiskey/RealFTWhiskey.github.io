@@ -9,6 +9,10 @@ document.getElementById('exampel').addEventListener('click', function () {
   window.location.href = 'classroomex.html';
 });
 
+document.getElementById('add').addEventListener('click', function () {
+  window.location.href = 'newroom.html';
+});
+
 const calendarDates = document.querySelector('.calendar-dates');
 const monthYear = document.getElementById('month-year');
 const prevMonthBtn = document.getElementById('prev-month');
